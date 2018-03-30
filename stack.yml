@@ -8,3 +8,9 @@ services:
       - "80:80"
     deploy:
       replicas: 1
+  escape-app:
+    image: nocquidant/poc
+    ports:
+      - "9999:8080"
+    deploy:
+      replicas: 2
