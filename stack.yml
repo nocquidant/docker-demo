@@ -2,15 +2,15 @@
 version: '3'
 
 services:
-  tutum:
-    image: tutum/hello-world
-    ports:
-      - "80:80"
-    deploy:
-      replicas: 1
+#  tutum:
+#    image: tutum/hello-world
+#    ports:
+#      - "80:80"
+#    deploy:
+#      replicas: 1
   escape-app:
     image: nocquidant/poc
     ports:
-      - "9999:8080"
+      - "80:8080"
     deploy:
       replicas: 2
